@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Recipe App Demo</title>
+</head>
+<body>
+    <!-- start of div -->
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="navlogo"><a href="#">FOODY</a></div>
+            <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Recipe</a></li>
+                    <li><a href="#">About us</a></li>
+                    <button><a href="#">Contact Us</a></button>
+                </ul>        
+        </div>
+    </nav>
+
+     <!-- part 1 main -->
+     <div class="main-background">
+        <div class="main-container">
+            <div class="main-text">
+                <h1>Foody Recipes</h1>
+                <h3>Recipes To bring The 'Fundi' Out of You</h3>
+            </div>
+        </div>
+     </div>
+
+     <!-- part 2 main -->
+      <div class="container-text">
+        <h4>RECIPES</h4>
+      </div>
+
+      <!-- part 3 body -->
+       <section>
+        <div class="body-section">
+            <div class="recipe-list">
+                <a class = "recipe-food-1" href="#">
+                    <img src="https://html-css-simply-recipes.netlify.app/assets/recipes/recipe-1.jpeg" >
+                    <h5>Carne Asada</h5>
+                    <p>Prep : 15min | Cook : 5min</p>
+                </a>
+
+                <a class = "recipe-food-2" href="#">
+                    <img src="https://html-css-simply-recipes.netlify.app/assets/recipes/recipe-2.jpeg" >
+                    <h5>Greek Ribs</h5>
+                    <p>Prep : 48min | Cook : 35min</p>
+                </a>
+
+
+                <a class = "recipe-food-3" href="#">
+                    <img src="https://html-css-simply-recipes.netlify.app/assets/recipes/recipe-3.jpeg">
+                    <h5>Vegetable Soup</h5>
+                    <p>Prep : 30min | Cook : 15min</p>
+                </a>
+
+            </div>
+
+            <div>
+                <a class = "recipe-food-4" href="#">
+                    <img src="https://html-css-simply-recipes.netlify.app/assets/recipes/recipe-4.jpeg">
+                    <h5>Banana Pancakes</h5>
+                    <p>Prep : 45min | Cook : 30min</p>
+                </a>
+            </div>
+        </div>
+       </section>
+
+
+       <!-- footer -->
+        <div class="footer">
+            <div class="footer-text">
+                <h6 class="foody-text">
+                    Copyright &#169 foodyrecipes@gmail.com
+                </h6>
+            </div>
+        </div>
+      
+      
+</body>
+</html>
+
+<script>
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+    });
+</script>

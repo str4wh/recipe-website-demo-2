@@ -1,0 +1,173 @@
+*{
+    text-decoration: none;
+}
+
+/* navbar style */
+.navbar{
+    background-color: rgb(101, 101, 150);
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navlogo a{
+    color: white;
+    font-size: 36px;
+    font-weight: bolder;
+}
+li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+}
+li a{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 28px;
+}
+li a:hover{
+    color: rgb(200, 200, 204);
+    
+}
+button{
+    background-color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    opacity: 0.6;
+}
+button:hover{
+    opacity: 1;
+}
+button a{
+    color: rgb(101, 101, 150);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* part 1 main background */
+.main-background{
+    background: url('https://html-css-simply-recipes.netlify.app/assets/main.jpeg') center/cover no-repeat;
+    height: 40vh;
+    position: relative;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+.main-text{
+    color: white;
+    text-align: center;
+    font-size: 38px;
+}
+
+/* part 2 main */
+
+h4{
+    font-size: 40px;
+    text-align: center;
+    color: rgb(101, 101, 150);
+    
+}
+
+/* part 3 body section */
+
+.body-section{
+    display: grid;
+}
+.recipe-list{
+    display: flex;
+    gap: 1rem;
+}
+img{
+    width: 100%;
+    height: 70%;
+}
+h5{
+    color:  rgb(101, 101, 150);
+    font-size: 16px;
+}
+p{
+    color:  rgb(89, 89, 170);
+}
+
+.recipe-food-4 img{ 
+    margin-bottom: 5px;
+    width: auto;
+}
+
+.recipe-food-4 p{
+    margin-top: 5px;
+}
+
+/* fotter */
+.footer{
+    margin-top: 0px;
+    background-color: rgb(89, 89, 170);
+    padding: 8px;
+}
+.footer-text{
+    text-align: center;
+}
+h6{
+    color: white;
+    font-size: 16px;
+}
+
+/* styling to incorparate small screens  */
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.menu-toggle{
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* responsive design for mobile devices */
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: rgb(101, 101, 150);
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        padding: 1rem 0;
+        z-index: 1000;
+    }
+    
+    .nav-links.show{
+        display: flex;
+    }
+
+    .menu-toggle{
+        display: block;
+    }
+
+    li{
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    button{
+        margin: 10px auto;
+    }
+}
