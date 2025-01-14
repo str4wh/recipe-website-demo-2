@@ -143,6 +143,15 @@ h6{
 /* responsive design for mobile devices */
 
 @media screen and (max-width: 768px) {
+
+    /* navbar section */
+
+    .navdiv{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    
     .nav-links {
         display: none;
         flex-direction: column;
@@ -152,6 +161,7 @@ h6{
         width: 100%;
         padding: 1rem 0;
         z-index: 1000;
+        text-align: center;
     }
     
     .nav-links.show{
@@ -160,6 +170,8 @@ h6{
 
     .menu-toggle{
         display: block;
+        align-self: flex-end;
+        margin-right: 15px;
     }
 
     li{
@@ -169,5 +181,66 @@ h6{
 
     button{
         margin: 10px auto;
+    }
+     
+    /* main section */
+
+    .main-background{
+        height: 30vh;
+        border-radius: 0;
+    }
+    
+    .main-container{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .main-text{
+        font-size: 28px;
+    }
+
+    /* recipe section */
+
+    .body-section {
+        grid-template-columns: 1fr; 
+        gap: 1rem; 
+        padding: 1rem;  
+    }
+
+    .recipe-list {
+        flex-direction: column; 
+    }
+
+    .recipe-food-1,
+    .recipe-food-2,
+    .recipe-food-3,
+    .recipe-food-4 {
+        text-align: center; 
+    }
+
+    img {
+        width: 100%; 
+        height: auto; 
+        max-width: 400px; 
+        margin: 0 auto; 
+        display: block; 
+
+    h5 {
+        font-size: 14px; 
+    }
+
+    p {
+        font-size: 12px; 
+    }
+
+    /* Footer Section */
+    .footer {
+        text-align: center; 
+        padding: 1rem; 
+    }
+
+    .footer-text h6 {
+        font-size: 14px;
+    }
     }
 }
